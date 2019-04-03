@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Employee Login</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="ch-cn">
+<script>
+
+	function validate() {
+		var uname = document.getElementById("uname");
+		var upass = document.getElementById("upass");
+		if(uname.value == ""){
+			alert("username can't be null");
+			return false;
+		}
+
+		else if(upass.value ==""){
+			alert("password can't be null");
+			return false;
+		}
+		else
+			return true;
+	}
+
+</script>
+
+</head>
+<body>
+	<div class = "imagei" ><img src="HolidayInn-ManhattanView-3.jpg"/></div>
+		<div class="page">
+			<br>
+				<div class = "head">
+					<ul><a href="#">Help</a></ul>
+					<ul><a href="#">Language</a></ul>
+				</div>
+		</div>
+			<br>
+			<br>
+			<br>
+		<div class = "contents">
+			Sign in with your work account.
+			<br>
+			<br>
+			<form method="post" action="logintest">
+				user name:<input type="text" id="uname" name="username"><br>
+				<br> password:<input type="password" id="upass" name="pwd"><br>
+				<br>
+				<br>
+				<button type="submit" value="submit" onclick="return validate();">submit</button>
+				<button type="reset" value="reset">Forgot your password? </button>
+			</form>
+		</div>
+</body>
+</html>
