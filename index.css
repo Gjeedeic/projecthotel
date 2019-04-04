@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.page {
+    background: #76AEED;
+    justify-content: center;
+    padding: 300px;
+    width: 280px
+    height: 20px
+    position: fixed;
+}
+
+.srole {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+
+.text {
+  font-style: italic;
+  color: #FFF;
+  font-size: 40px;
+  padding-left: 170px;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #EEB75A;
+  background-color: #FFF;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  width: 90px;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  background: #FFF;
+  padding: 10px;
+}
