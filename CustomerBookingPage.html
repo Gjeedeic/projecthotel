@@ -1,23 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <title>Customer Booking Page</title>
-    </head>
-    <body>
-        <p><b>Welcome, <!--[name]--></b></p>
-        <br> 
-        <p><b>Here are the room(s) you booked:</b></p>
-        <br> <li><!--rooms--></li>
-        <p><b>Here are the available rooms:</b></p>
-        <select><!--list of rooms will go here--></select> <button class="btn bg-white ml-4" type="button">BOOK</button>
-    </body>
+<head>
+<title>Customer Booking Page</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="ch-cn">
+<script>
+
+	function validate() {
+		var uname = document.getElementById("uname");
+		var upass = document.getElementById("upass");
+		if(uname.value == ""){
+			alert("username can't be null");
+			return false;
+		}
+
+		else if(upass.value ==""){
+			alert("password can't be null");
+			return false;
+		}
+		else
+			return true;
+	}
+
+</script>
+
+</head>
+<body>
+	<div class = "imagei" ><img src="HolidayInn-ManhattanView-3.jpg"/></div>
+		<div class="page">
+			<br>
+				<div class = "head">
+					<ul><a href="#">Help</a></ul>
+					<ul><a href="#">Language</a></ul>
+				</div>
+		</div>
+			<br>
+			<br>
+			<br>
+		<div class = "contents">
+			<h4>Welcome, <!--[name]--></h4>
+			<br>
+			<br>
+            <p><b>Here are the room(s) you booked:</b></p>
+            <br> <li><!--rooms--></li><br>
+            <p><b>Here are the available rooms:</b></p><br>
+            <select><!--list of rooms will go here--></select> <button class="btn bg-white ml-4" type="button">BOOK</button>
+		</div>
+</body>
 </html>
-
-<!--Welcome, <name>-->
-
-<!--Here are the room(s) you booked:-->
-
-    <!--<BULLET POINT> ##---booked-->
-
-<!--Here are the available rooms:-->
-
-<!--<dropdown> [BOOK]--> 
