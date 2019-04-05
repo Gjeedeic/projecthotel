@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Customer Registration Page</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="customerg.css">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Language" content="ch-cn">
 <script>
@@ -27,28 +27,24 @@
 
 </head>
 <body>
-	<div class = "imagei" ><img src="HolidayInn-ManhattanView-3.jpg"/></div>
 		<div class="page">
-			<br>
 				<div class = "head">
 					<ul><a href="#">Help</a></ul>
 					<ul><a href="#">Language</a></ul>
 				</div>
 		</div>
-			<br>
-			<br>
-			<br>
+		<header class="customerheader">
+			<h1>Customer submission</h1>
+			<p><em>Please fill out this form.</em></p>
+		</header>
 		<div class = "contents">
-			<h4>This is the Customer Registration Page.</h4>
-			<br>
-			<br>
-			<form method="post" action="logintest">
+			<form method="post" action="logintest" class="customerform">
 				Please input your SSN: <input type="text" name="ssn" id="uSSN" class="text-center"><br>
 				<br>Please input your Name: <input type="text" name="name" id="uName" class="text-center"><br>
                 <br>Please input your Password: <input type="text" name="password" id="uPassword" class="text-center"><br>
                 <br>Please input your Password again: <input type="text" name="password" id="uPassword" class="text-center"><br>
                 <br>
-				<button class="btn bg-white ml-4" type="button">SUBMIT</button> <button class="btn bg-white ml-4" type="button">RESET</button>
+				<button class="btn bg-white ml-4" type="button">Submit</button> <button class="btn bg-white ml-4" type="button">Reset</button>
 			</form>
 		</div>
 </body>
