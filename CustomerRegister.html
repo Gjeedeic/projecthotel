@@ -7,21 +7,28 @@
 <meta http-equiv="Content-Language" content="ch-cn">
 <script>
 
-	function validate() {
-		var uname = document.getElementById("uname");
-		var upass = document.getElementById("upass");
-		if(uname.value == ""){
-			alert("username can't be null");
-			return false;
-		}
-
-		else if(upass.value ==""){
-			alert("password can't be null");
-			return false;
-		}
-		else
-			return true;
+function validate() {
+	var custSSN = document.getElementById("custSSN");
+	var custName = document.getElementById("custName");
+	var custPwd = document.getElementById("custPwd");
+	var custPwdagain = document.getElementById("custPwdagain");
+	if(custSSN.value == "" || custName.value == "" || custPwd.value == "" || custPwdagain.value == "" ){
+		alert("You need to fill all the information");
+		return false;
 	}
+
+	else if(custSSN.value.length != 4){
+		alert("The length of SSN needs to be 4");
+		return false;
+	}
+
+	else if(custPwd.value != custPwdagain.value){
+		alert("passwords need to be same");
+		return false;
+	}
+	else
+		return true;
+}
 
 </script>
 
@@ -44,7 +51,8 @@
                 <br>Please input your Password: <input type="text" name="password" id="uPassword" class="text-center"><br>
                 <br>Please input your Password again: <input type="text" name="password" id="uPassword" class="text-center"><br>
                 <br>
-				<button class="btn bg-white ml-4" type="button">Submit</button> <button class="btn bg-white ml-4" type="button">Reset</button>
+				<button type="submit" value="submit" onclick="return validate();">submit</button>
+				<button class="btn bg-white ml-4" type="button">Reset</button>
 			</form>
 		</div>
 </body>
